@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const CUSTOMER_API_BASE_URL = "http://localhost:8080/api/v1/customers";
+const CUSTOMER_API_BASE_URL = "https://spring-customers-backend.herokuapp.com/api/v1/customers";
 class CustomerService {
   saveCustomer(customer) {
     return axios.post(CUSTOMER_API_BASE_URL, customer);
